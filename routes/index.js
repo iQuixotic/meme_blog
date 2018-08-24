@@ -5,7 +5,7 @@ const router = require('express').Router();
 
 // // if no routes are hit, go to react app
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/index.html'));
+    res.render('layouts/main');
 });
 
 module.exports = router;
