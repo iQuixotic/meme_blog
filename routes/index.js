@@ -7,7 +7,15 @@ const router = require('express').Router();
 
 // if no routes are hit, go the app
 router.get('/', (req, res) => {
-    res.render('layouts/app');
+    res.render('layouts/main');
+});
+
+router.get('/login', (req, res) => {
+    res.render('layouts/login');
+});
+
+router.get('/register', (req, res) => {
+    res.render('layouts/register');
 });
 
 module.exports = router;

@@ -1,7 +1,22 @@
 console.log('hoppie');
 
-$(document).ready(function() {
+const windowHref = window.location.href;
+console.log(windowHref)
 
-Handlebars.registerPartial('navbarPartial', $('#Navbar').html());
+const myPath = windowHref.substr(21)
+console.log(myPath)
 
-})
+const root = document.getElementById('root');
+console.log(root)
+
+if (myPath==='/') {
+    console.log('it does')
+}
+
+
+
+$(root).append(myPath)
+
+// $(document).ready(function() {
+// Handlebars.registerPartial('navbarPartial', $('#Navbar').html());
+// })
