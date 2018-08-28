@@ -1,0 +1,16 @@
+.Navbar_UL {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.Navbar_LI {
+    width: 15%;
+    font-size: 3rem;
+}
+
+.Navbar_LI  a {
+    color: white;
+}

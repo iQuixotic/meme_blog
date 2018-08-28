@@ -8,16 +8,21 @@
     <script type="text/javascript" src="http://livejs.com/live.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/base/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/base/master.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/layout/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/modules/navbar.css" />
+    {{!-- <script src="assets/js/hbHelpers.js"></script> --}}
 </head>
 <body>
 
 {{> nav }}
 {{!-- everything supplied from layouts --}}
         {{{ body }}}
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
+    <script src="assets/js/hbHelpers.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
