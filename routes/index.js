@@ -1,5 +1,5 @@
-const path = require("path");
 const router = require('express').Router();
+const data = require('../controllers/helpers/routeHelpers')
 // const authRoutes = require('./auth')
 
 // tell the app when to use these routes
@@ -15,7 +15,7 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/register', (req, res) => {
-    res.render('layouts/register');
+    res.render('layouts/register', data);
 });
 
 module.exports = router;

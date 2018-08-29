@@ -1,10 +1,11 @@
 
 <h1>Register</h1>
 <h1>Register</h1>
-
+<h1>Register</h1>
 <h1>Register</h1>
 
-<h1>Register</h1>
-
-const myArr = [1, 2, 3]
-{{makeList myArr}}
+<ul>
+    {{#each pageNumbers}}
+        <li><a href="/{{this}}">{{this}}</a></li>
+    {{/each}}
+</ul>

@@ -15,7 +15,13 @@ app.use(bodyParser.json());
 app.use(routes);
 
 // view engine setup
-app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'index', layoutsDir: __dirname + '/views/'}));
+const hbsHelpers = hbs.create({
+  extname: 'hbs', 
+  helpers: require('./controllers/helpers/handlebars').helpers,
+  defaultLayout: 'index', 
+  layoutsDir: __dirname + '/views/'
+});
+app.engine('.hbs', hbsHelpers.engine)
 app.use(express.static(path.join(__dirname, 'views')));
 app.set('view engine', 'hbs')
 
